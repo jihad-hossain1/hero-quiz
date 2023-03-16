@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap link  -->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <style>
+        .bac-color {
+            background-color: azure;
+        }
+    </style>
+
+</head>
+
+<body class="bac-color">
+    <section class="mx-3 my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col shadow-sm">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">1. What are the differnce .map() Vs .filter() Vs .forEach() Vs .find() ?
+                        </h5>
+                        <p>
+                            <span class="fw-semibold">map</span> method executes the same code on every element in an
+                            array and returns a new array with the updated elements.
+                        </p>
+                        <p>
+                            <span class="fw-semibold">filter</span> is a search function that returns all the elements
+                            that fulfil the assigned condition.
+                        </p>
+                        <p>
+                            <span class="fw-semibold">find</span> is also a search function like the previous but they
+                            differnce in one small detail — this function returns only one match in an array. If in an
+                            array is more than one result, that are return the first that has matched.
+                        </p>
+                        <p class="card-text"><span class="fw-semibold">forEach</span> method is used to execute the same
+                            code on every element in an array but does not change the array and it returns undefined.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col shadow-sm">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">2. What are the differnce LocalStorage Vs SessionStorage Vs Cookies ?
+                        </h5>
+                        <p>
+                            <span class="fw-semibold">localStorage</span> is a way to store data on the browser. It
+                            allows the saving of key/value pairs in a web browser and it stores data with no expiration
+                            date. we can setdata, clearing data, getdata from user in localStorage.
+                        </p>
+                        <p>
+                            <span class="fw-semibold">SessionStorage</span> as stores data only for a session, meaning
+                            that the data is stored until the browser (or tab) is closed.
+                        </p>
+                        <p>
+                            <span class="fw-semibold">cookies</span> Stores data that has to be sent back to the server
+                            with subsequent XHR requests. Its expiration varies based on the type and the expiration
+                            duration can be set from either server-side or client-side . Cookies are primarily for
+                            server-side reading. Cookies can be made secure by setting the httpOnly flag as true for
+                            that cookie. This prevents client-side access to that cookie.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col shadow-sm">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">3. What is Event loop ? how it's work ?</h5>
+                        <p>
+                            The event loop ensures that the JavaScript
+                            code can continue to execute while waiting for asynchronous operations to complete. <br>
+                            The event loop works by continuously checking the event queue and executing the tasks in the
+                            queue. When a task is added to the queue, the event loop checks whether the call stack is
+                            empty. If the call stack is empty, the task is immediately executed. If the call stack is
+                            not empty, the task is placed in the queue and will be executed once the call stack becomes
+                            empty. <br>
+                            The event loop is a critical component of the JavaScript runtime, as it allows for the
+                            efficient execution of asynchronous operations such as network requests and user input.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
